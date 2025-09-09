@@ -1,4 +1,4 @@
-package Strings.Level1;
+package Strings.LevelOne;
 import java.util.*;
 public class StringToCharArrayComparison {
     public static void main(String[] args) {
