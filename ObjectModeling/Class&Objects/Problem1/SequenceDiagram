@@ -1,0 +1,13 @@
+Actor(Student)      GradeCalculator
+     |                     |
+     |  requestGrade()     |
+     |-------------------->|
+     |                     |
+     |   getSubjects()     |
+     |<--------------------|
+     |                     |
+     | calculateAverage()  |
+     |-------------------->|
+     |                     |
+     | return grade "A"    |
+     |<--------------------|
