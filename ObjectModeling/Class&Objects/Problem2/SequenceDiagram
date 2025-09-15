@@ -1,0 +1,13 @@
+Actor(Customer)      BillGenerator
+     |                     |
+     |  requestBill()      |
+     |-------------------->|
+     |                     |
+     |   getProducts()     |
+     |<--------------------|
+     |                     |
+     | calculate total     |
+     |-------------------->|
+     |                     |
+     | return total = $8   |
+     |<--------------------|
