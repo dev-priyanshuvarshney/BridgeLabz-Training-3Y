@@ -1,0 +1,20 @@
+ Customer: Alice
+ +-------------------+
+ | name = "Alice"    |
+ +-------------------+
+ | products          |
+ +-------------------+
+        |
+        |----> Product: Apples
+        |       +-------------------+
+        |       | name = "Apples"   |
+        |       | quantity = 2 kg   |
+        |       | pricePerUnit = $3 |
+        |       +-------------------+
+        |
+        |----> Product: Milk
+                +-------------------+
+                | name = "Milk"     |
+                | quantity = 1 liter|
+                | pricePerUnit = $2 |
+                +-------------------+
