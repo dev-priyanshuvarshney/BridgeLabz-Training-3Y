@@ -1,0 +1,19 @@
+ Student: John
+ +------------------+
+ | name = "John"    |
+ | rollNo = 101     |
+ +------------------+
+ | subjects         |
+ +------------------+
+        |
+        |----> Subject: Maths
+        |       +------------------+
+        |       | subjectName="Maths" |
+        |       | marks = 90       |
+        |       +------------------+
+        |
+        |----> Subject: Science
+                +------------------+
+                | subjectName="Science" |
+                | marks = 85        |
+                +------------------+
