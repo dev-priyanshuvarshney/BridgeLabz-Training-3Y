@@ -1,88 +1,90 @@
 class Employee {
-    private String name;
+    String empName;
+    int empId;
 
-    public Employee(String name) {
-        this.name = name;
+    Employee(String empName, int empId) {
+        this.empName = empName;
+        this.empId = empId;
     }
 
-    public String toString() {
-        return "Employee: " + name;
+    void showEmployee() {
+        System.out.println("Employee: " + empName + " (ID: " + empId + ")");
     }
 }
 
 class Department {
-    private String deptName;
-    private Employee[] employees;
-    private int count;
+    String deptName;
+    Employee[] workers;
+    int count;
 
-    public Department(String deptName, int maxEmployees) {
+    Department(String deptName, int size) {
         this.deptName = deptName;
-        employees = new Employee[maxEmployees];
-        count = 0;
+        this.workers = new Employee[size];
+        this.count = 0;
     }
 
-    public void addEmployee(String name) {
-        if (count < employees.length) {
-            employees[count++] = new Employee(name);
+    void addEmployee(Employee e) {
+        if (count < workers.length) {
+            workers[count] = e;
+            count++;
         }
     }
 
-    public void showEmployees() {
+    void showDepartment() {
         System.out.println("Department: " + deptName);
         for (int i = 0; i < count; i++) {
-            System.out.println(employees[i]);
+            workers[i].showEmployee();
         }
-        System.out.println();
     }
 }
 
 class Company {
-    private String companyName;
-    private Department[] departments;
-    private int count;
+    String companyName;
+    Department[] depts;
+    int dcount;
 
-    public Company(String companyName, int maxDepartments) {
+    Company(String companyName, int size) {
         this.companyName = companyName;
-        departments = new Department[maxDepartments];
-        count = 0;
+        this.depts = new Department[size];
+        this.dcount = 0;
     }
 
-    public Department addDepartment(String deptName, int maxEmployees) {
-        if (count < departments.length) {
-            Department d = new Department(deptName, maxEmployees);
-            departments[count++] = d;
-            return d;
+    void addDepartment(Department d) {
+        if (dcount < depts.length) {
+            depts[dcount] = d;
+            dcount++;
         }
-        return null;
     }
 
-    public void showCompanyStructure() {
+    void showCompany() {
         System.out.println("Company: " + companyName);
-        for (int i = 0; i < count; i++) {
-            departments[i].showEmployees();
+        for (int i = 0; i < dcount; i++) {
+            depts[i].showDepartment();
+            System.out.println();
         }
-    }
-
-    public void closeCompany() {
-        System.out.println("Closing company: " + companyName);
-        departments = null;
     }
 }
 
-public class CompositionDemo {
+public class CompanyDemo {
     public static void main(String[] args) {
-        Company c = new Company("TechCorp", 3);
+        Company c1 = new Company("TechSoft Ltd", 2);
 
-        Department d1 = c.addDepartment("IT", 5);
-        Department d2 = c.addDepartment("HR", 3);
+        Department d1 = new Department("IT", 2);
+        d1.addEmployee(new Employee("Ravi", 101));
+        d1.addEmployee(new Employee("Neha", 102));
 
-        d1.addEmployee("Alice");
-        d1.addEmployee("Bob");
+        Department d2 = new Department("HR", 2);
+        d2.addEmployee(new Employee("Amit", 201));
+        d2.addEmployee(new Employee("Priya", 202));
 
-        d2.addEmployee("Charlie");
+        c1.addDepartment(d1);
+        c1.addDepartment(d2);
 
-        c.showCompanyStructure();
+        c1.showCompany();
 
-        c.closeCompany();
+        // Composition demo: if c1 object is deleted → d1, d2 and employees cannot exist
+        c1 = null;
+        System.gc();
+        System.out.println("\nCompany deleted → Departments and Employees also removed.");
     }
 }
