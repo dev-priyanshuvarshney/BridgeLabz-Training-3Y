@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a4d1f7c-b4b1-44bf-bcc5-ec862d2a0dd6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Constructors/Operators/BankAccountSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Constructors/Operators/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Constructors/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Level1/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1/CircleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Level1/CircleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level1/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Level1/Employee.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dev-priyanshuvarshney&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dev-priyanshuvarshney/BridgeLabz-Training-3Y.git&quot;,
+    &quot;accountId&quot;: &quot;166588c0-6bcf-4676-a86d-f60aa208ef08&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="32UmSWjX4kMlLY0DSRt9LxOQMNk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BankAccountSystem.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Java-OOPS&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="BankAccountSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Operators.BankAccountSystem" />
+      <module name="BridgeLabz-Training-3Y" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Operators.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BankAccountSystem" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a4d1f7c-b4b1-44bf-bcc5-ec862d2a0dd6" name="Changes" comment="" />
+      <created>1757483526227</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757483526227</updated>
+    </task>
+    <servers />
+  </component>
+</project>
